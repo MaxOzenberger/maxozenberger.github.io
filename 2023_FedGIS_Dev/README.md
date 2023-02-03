@@ -1,4 +1,4 @@
-# Esri European DevSummit Plenary Demos
+# Esri FedGIS 2023 JS Demos
 
 You can use the [template](./demos/template) demo app to set your own demo.
 
