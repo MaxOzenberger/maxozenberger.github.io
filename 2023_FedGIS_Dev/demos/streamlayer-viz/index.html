@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>US Flights</title>
+  <link rel="stylesheet"
+    href="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.2.5/css/calcite-web.min.css">
+  <link rel="stylesheet" href="https://js.arcgis.com/4.22/esri/themes/dark/main.css">
+  <link rel="stylesheet" href="./../../main.css">
+  <link rel="stylesheet" href="./local.css">
+  <link href="./../../prism/prism.css" rel="stylesheet" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix.js"></script>
+  <script
+    src="https://s3-us-west-1.amazonaws.com/patterns.esri.com/files/calcite-web/1.2.5/js/calcite-web.min.js"></script>
+
+  <script src="https://js.arcgis.com/4.22/"></script>
+  <script src="./../../prism/prism.js"></script>
+</head>
+
+<body>
+  <header class="top-nav fade-in" role="banner">
+    <div class="grid-container">
+      <div class="column-24">
+        <div class="tablet-hide">
+          <span class="header-title">StreamLayer / Rendering</span>
+          <nav class="top-nav-list right" role="navigation" aria-labelledby="topnav">
+            <span class="demo-name" href="#">ArcGIS API for JavaScript</span>
+          </nav>
+        </div>
+
+        <div class="tablet-show top-nav-flex">
+          <header class="top-nav-flex-title">
+            <a href="/" class="top-nav-link">ArcGIS <span class="phone-hide">API for JavaScript</span></a>
+          </header>
+        </div>
+      </div>
+    </div>
+  </header>
+  <div id="viewDiv">
+    <div id="toggle-snippet" class="esri-widget esri-widget--button esri-interactive" title="Code Snippet">
+      <span class="icon-snippet"></span>
+    </div>
+    <div id="code-snippet">
+      <pre><code class="language-js">
+streamLayer = new StreamLayer({
+  url: svcUrl,
+  popupTemplate: template,
+  purgeOptions: {
+    displayCount: 10000
+  },
+  renderer: {
+    type: "simple",
+    symbol: {
+      type: "picture-marker",  // autocasts as new PictureMarkerSymbol()
+      url: "./plane-16.svg",
+      height: "32px",
+      width: "32px"
+    },
+    visualVariables: [{
+      type: "rotation",
+      field: "heading",
+      rotationType: "geographic"
+    },
+    {
+      type: "color",
+      field: "speed",
+      stops: [
+        {
+          value: 0,
+          color: "#5edbcd"
+        },
+        {
+          value: 359,
+          color: "#a104c9"
+        }
+      ]
+    }
+    ]
+  }
+});
+
+///
+
+streamLayerView.effect = {
+  filter: {
+    geometry: view.extent.clone().expand(0.8)
+  },
+  excludedEffect: "grayscale(100%) opacity(30%)"
+};
+      </code></pre>
+    </div>
+  </div>
+  <div id="streamLayerDiv" class="esri-widget" style="background-color: rgb(141, 138, 138);">
+    <div class="esri-editor__controls">
+      <label class="esri-feature-form__label">Stream service url:
+        <input class="esri-input esri-feature-form__input" type="text" id="streamUrlText"
+           value="https://us-iot.arcgis.com/usadvanced00/n82jbi5eytakuuku/streams/arcgis/rest/services/Monterey_Flights/StreamServer"/></label>
+        <div class="button_plus" onclick="addInputStream()"></div>
+      <input type="button" id="toggleStreamLayerButton" value="Add stream layer" class="esri-button" />
+    </div>
+
+    <br />
+    <div class="esri-editor__controls">
+      <label class="esri-feature-form__label">
+        Only display features within current extent: <br />
+        1. Zoom to a desired extent <br />
+        2. Click Apply spatial filter button
+      </label>
+      <button id="toggleGeometryDefinitionButton" class="esri-button esri-button--disabled">
+        Apply spatial filter
+      </button>
+    </div>
+    <!--<br />
+    <div class="esri-editor__controls">
+      <label for="attribute-filter-select">Filter planes by altitude:</label>
+      <select id="attribute-filter-select" class="esri-select esri-select--disabled">
+        <option value="-1" selected>none</option>
+        <option value="10000">10,000ft or higher</option>
+        <option value="6000">6,000ft or higher</option>
+        <option value="3000">3,000ft or higher</option>
+        <option value="2999">Lower than 3,000 feet</option>
+      </select><br />
+      <button id="clearFilterButton" class="esri-button esri-button--disabled">
+        Clear
+      </button>
+    </div>-->
+  </div>
+  <script src="./../../utils/snippet.js"></script>
+  <script src="./main.js"></script>
+
+</body>
+
+</html>
