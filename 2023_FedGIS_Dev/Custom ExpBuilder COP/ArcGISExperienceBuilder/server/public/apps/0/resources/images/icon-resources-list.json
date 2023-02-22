@@ -1,0 +1,62 @@
+{
+  "right-arrow-12": {
+    "svg": "<svg viewBox=\"0 0 12 12\" xmlns=\"http://www.w3.org/2000/svg\"><g fill=\"none\" fill-rule=\"evenodd\"><path d=\"M9.521 5.47L3.981.162a.592.592 0 00-.813 0 .534.534 0 000 .779L8.448 6l-5.28 5.06a.534.534 0 000 .779.592.592 0 00.813 0l5.54-5.31a.726.726 0 000-1.058z\" fill=\"#000\"></path><path d=\"M0 0h12v12H0z\"></path></g></svg>?token=G6nMN1QUq_i-dLr49Nx-UsTcGSzOtb_DJtGNdOl9dKeK3ScHWZ-oZT8HiLL4DU7vCcdcwWk-4L1ifs5CgPWVhUPsOqXCbNWhrNx9IoxgwEr2XzLovsQr2Pb_KmlTCH6UysyQ6v1SpD_k1A6PJLikbcx5vUt5tpge0YAHVQiz5ZY1O4-kirme37YW_SQSXFgADJgHvxKbA-8hPCuDhMd60xGVBbbApmp2MfTBYO2nb2I.?token=G6nMN1QUq_i-dLr49Nx-UsTcGSzOtb_DJtGNdOl9dKeK3ScHWZ-oZT8HiLL4DU7vCcdcwWk-4L1ifs5CgPWVhUPsOqXCbNWhrNx9IoxgwEr2XzLovsQr2Pb_KmlTCH6UysyQ6v1SpD_k1A6PJLikbcx5vUt5tpge0YAHVQiz5ZY1O4-kirme37YW_SQSXFgADJgHvxKbA-8hPCuDhMd60xGVBbbApmp2MfTBYO2nb2I.?token=85GenBbx3t2bEKgaxgdqOssfuWcTBTtV7O06nUKqECa7bxLYxoLb2KwytpRdAEWKp12mwKQAncJz1V_ZDn1KdK4dhXlambUh8GVGKI2LhahP9PpBEPjRUHvsafrc2kWQQkKdgTHP7vey4voxDk-hxOZEoYVT2xo2hVKaUTDtJAw_1d-jGRkl91xsEJlTsSfxdBIwsw0InOZayuRyeKk147Y7epKbusz1hM1U2ajIhy8.",
+    "properties": {
+      "filename": "right-arrow-12"
+    }
+  },
+  "1675434270989.png": {
+    "svg": "${appResourceUrl}/images/icon_picker_in_setting/1675434270989.png",
+    "properties": {
+      "filename": "1675434270989.png",
+      "originalName": "flag-flags-marker-pointer-svgrepo-com.png",
+      "path": "${appResourceUrl}/images/icon_picker_in_setting/1675434270989.png",
+      "inlineSvg": false
+    }
+  },
+  "1675434314987.png": {
+    "svg": "${appResourceUrl}/images/icon_picker_in_setting/1675434314987.png",
+    "properties": {
+      "filename": "1675434314987.png",
+      "originalName": "flag-flags-marker-pointer-svgrepo-com (1).png",
+      "path": "${appResourceUrl}/images/icon_picker_in_setting/1675434314987.png",
+      "inlineSvg": false
+    }
+  },
+  "1675434356218.png": {
+    "svg": "${appResourceUrl}/images/icon_picker_in_setting/1675434356218.png",
+    "properties": {
+      "filename": "1675434356218.png",
+      "originalName": "shield-outlined-svgrepo-com.png",
+      "path": "${appResourceUrl}/images/icon_picker_in_setting/1675434356218.png",
+      "inlineSvg": false
+    }
+  },
+  "1675434430765.png": {
+    "svg": "${appResourceUrl}/images/icon_picker_in_setting/1675434430765.png",
+    "properties": {
+      "filename": "1675434430765.png",
+      "originalName": "shield-outlined-svgrepo-com (1).png",
+      "path": "${appResourceUrl}/images/icon_picker_in_setting/1675434430765.png",
+      "inlineSvg": false
+    }
+  },
+  "1675434477380.png": {
+    "svg": "${appResourceUrl}/images/icon_picker_in_setting/1675434477380.png",
+    "properties": {
+      "filename": "1675434477380.png",
+      "originalName": "shield-svgrepo-com.png",
+      "path": "${appResourceUrl}/images/icon_picker_in_setting/1675434477380.png",
+      "inlineSvg": false
+    }
+  },
+  "1675434521485.png": {
+    "svg": "${appResourceUrl}/images/icon_picker_in_setting/1675434521485.png",
+    "properties": {
+      "filename": "1675434521485.png",
+      "originalName": "sensor-svgrepo-com.png",
+      "path": "${appResourceUrl}/images/icon_picker_in_setting/1675434521485.png",
+      "inlineSvg": false
+    }
+  }
+}

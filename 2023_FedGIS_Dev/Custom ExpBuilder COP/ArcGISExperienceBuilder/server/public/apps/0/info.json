@@ -1,0 +1,29 @@
+{
+  "created": 1675452022326,
+  "description": "",
+  "id": "0",
+  "modified": 1675619833015,
+  "owner": "demo_rt",
+  "tags": [],
+  "thumbnail": "thumbnail/thumbnail1675452022503.png",
+  "title": "Monterey COP Alerts",
+  "type": "Web Experience",
+  "snippet": "",
+  "typeKeywords": [
+    "EXB Experience",
+    "JavaScript",
+    "publishVersion:1.10.0",
+    "Ready To Use",
+    "status: Draft",
+    "version:1.10.0",
+    "Web Application",
+    "Web Experience",
+    "Web Mapping Application",
+    "Web Page",
+    "Web Site"
+  ],
+  "portalUrl": "https://runtime.maps.arcgis.com",
+  "username": "demo_rt",
+  "f": "json",
+  "token": "undefined"
+}
