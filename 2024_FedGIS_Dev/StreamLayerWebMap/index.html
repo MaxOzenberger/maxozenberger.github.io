@@ -1,0 +1,46 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>Load a basic WebMap with Stream Layer | ArcGIS Maps SDK for JavaScript 4.28</title>
+
+    <style>
+      html,
+      body,
+      #viewDiv {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://js.arcgis.com/4.28/esri/themes/light/main.css" />
+
+    <script src="https://js.arcgis.com/4.28/"></script>
+
+    <script>
+      require(["esri/views/MapView", "esri/WebMap"], (MapView, WebMap) => {
+      
+        const webmap = new WebMap({
+          portalItem: {
+            // autocasts as new PortalItem()
+            id: "086c087904a349b18c4fb7d2c5bbcc5e"
+          }
+        });
+
+        /************************************************************
+         * Set the WebMap instance to the map property in a MapView.
+         ************************************************************/
+        const view = new MapView({
+          map: webmap,
+          container: "viewDiv"
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div id="viewDiv"></div>
+  </body>
+</html>
